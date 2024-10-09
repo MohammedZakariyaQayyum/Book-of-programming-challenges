@@ -1,5 +1,5 @@
 width = int(input("Enter width: "))
 height = int(input("Enter height: "))
-length = int(input("Enter length: "))
-area = ((width * height) + (width * length) + (height * length)) * 2
-print("Total surface are is:",area)
+area = ((width * height)*4) + ((width * width)*2)
+volume = width*width*height
+print("Total surface area is:",area,"and total volume is:",volume)
