@@ -12,8 +12,14 @@ def dayslived(day,month,year):
   total_days = diff_day + month_days + year_days
   return(total_days)
 
+def minuteslived(total_days):
+  total_minutes = (((total_days * 24) * 60) * 60)
+  return(total_minutes)
+
 day = int(input("Enter day you were born: "))
 month = int(input("Enter month born: "))
 year = int(input("Enter year born: "))
 total_days = dayslived(day,month,year)
+total_minutes = minuteslived(total_days)
 print("You lived for approx this amount of days: ",total_days)
+print("You lived for approx this amount of minutes: ",total_minutes)
