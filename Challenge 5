@@ -1,0 +1,19 @@
+def dayslived(day,month,year):
+  import datetime
+  x = datetime.datetime.now()
+  now_day = (x.day)
+  now_month = (x.month)
+  now_year = (x.year)
+  diff_day = (now_day - day)
+  diff_month = (now_month - month)
+  diff_year = (now_year - year)
+  month_days = (diff_month * 30)
+  year_days = ((diff_year * 12) * 30)
+  total_days = diff_day + month_days + year_days
+  return(total_days)
+
+day = int(input("Enter day you were born: "))
+month = int(input("Enter month born: "))
+year = int(input("Enter year born: "))
+total_days = dayslived(day,month,year)
+print("You lived for approx this amount of days: ",total_days)
