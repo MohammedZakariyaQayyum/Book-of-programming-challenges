@@ -1,0 +1,14 @@
+import datetime
+
+print("This is to test if you can see how long ten seconds is")
+first = input("Click enter when you want to begin the timer")
+if first = "":
+  x = datetime.datetime.now()
+  first_sec = (x.second)
+second = input("Click enter to stop the timer")
+if second = "":
+  y = datetime.datetime.now()
+  second_sec = (y.second)
+
+total_sec = second_sec - first_sec
+print(total_sec)
