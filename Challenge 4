@@ -1,0 +1,8 @@
+def dist(speed,time):
+  distance = speed*time
+  return(distance)
+
+speed = int(input("Enter speed: "))
+time = int(input("Enter time: "))
+distance = dist(speed,time)
+print(distance)
