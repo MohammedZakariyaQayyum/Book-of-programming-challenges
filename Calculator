@@ -1,0 +1,23 @@
+cont = "yes"
+while cont == "yes":
+    print("This is a calculator\n")
+    num1 = int(input("Enter your first number: "))
+    num2 = int(input("Enter your second number: "))
+    op = input("\nSelect which operation to use:(+ - * /)  ")
+    if op == "+":
+        sum = num1 + num2
+        print(str(num1)+str(op)+str(num2),"=",sum)
+    elif op == "-":
+        sum = num1 - num2
+        print(str(num1)+str(op)+str(num2),"=",sum)
+    elif op == "/":
+        sum = num1 / num2
+        print(str(num1)+str(op)+str(num2),"=",sum)
+    elif op == "*":
+        sum = num1 * num2
+        print(str(num1)+str(op)+str(num2),"=",sum)
+    else:
+        print("INVALID INPUT")
+
+
+    cont = input("Do you want to continue? (yes/no) ")
